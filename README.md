@@ -1,3 +1,8 @@
+Update:Some reason after the image finish generating it says it can't find the image even though it is in the folder. if anyone can fix it let me know.
+
+
+
+
 # Hotshot-XL-Gradio-Cpu-Termux
 Hey I modified the Hotshotxl gradio app.py to support cpu! It works and is faster than comfyui but I wish we could use custom sdxl models.
 
