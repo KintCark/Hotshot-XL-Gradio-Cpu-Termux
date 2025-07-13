@@ -1,3 +1,43 @@
+Before installing virtual environment
+make sure u install ubuntu in termux first 
+
+
+Looks like Python 3.12 actually Works!! U have to create a virtual environment so here is the guide:
+
+
+To run ComfyUI in a separate environment on Termux with Python 3.10.11, follow these steps:
+
+
+---
+
+1. Install Required Packages
+
+First, ensure your Termux is updated and install necessary packages:
+
+apt update -y && apt upgrade -y
+apt install python3-full git ffmpeg
+
+
+---
+
+2. Install & Setup a Virtual Environment
+
+Create and activate a virtual environment:
+
+python3 -m venv comfyui-env
+source comfyui-env/bin/activate
+
+
+
+
+
+
+
+
+
+
+
+
 Update:Some reason after the image finish generating it says it can't find the image even though it is in the folder. if anyone can fix it let me know.
 
 
@@ -10,16 +50,16 @@ Hey I modified the Hotshotxl gradio app.py to support cpu! It works and is faste
 pkg updated && pkg upgrade -y && termux-setup-storage && pkg install wget -y && pkg install git -y && pkg install proot -y && cd ~ && git clone https://github.com/MFDGaming/ubuntu-in-termux.git && cd ubuntu-in-termux && chmod +x ubuntu.sh && ./ubuntu.sh -y && ./startubuntu.sh
 
 
-apt update && apt upgrade -y && apt-get install curl git gcc make build-essential python3 python3-dev python3-distutils python3-pip python3-venv python-is-python3 -y && pip install ffmpeg --break-system-packages && apt dist-upgrade -y && apt install wget && apt-get install libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 -y && apt-get install google-perftools &&
-apt install libgoogle-perftools-dev && pip install moviepy==1.0.3 --break-system-packages && pip install cmake accelerate --break-system-packages
+apt update && apt upgrade -y && apt-get install curl git gcc make build-essential python3 python3-dev python3-distutils python3-pip python3-venv python-is-python3 -y && pip install ffmpeg && apt dist-upgrade -y && apt install wget && apt-get install libgl1 libglib2.0-0 libsm6 libxrender1 libxext6 -y && apt-get install google-perftools &&
+apt install libgoogle-perftools-dev && pip install moviepy==1.0.3 && pip install cmake accelerate
 
 
 git clone https://github.com/openai/triton.git;
 cd triton;
 
-pip install ninja cmake wheel; --break-system-packages
+pip install ninja cmake wheel;
 
-pip install -e python --break-system-packages
+pip install -e python
 
 you will get an error ignore it and continue 
 
